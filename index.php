@@ -42,14 +42,14 @@ class Movie {
 
     // Metodi per genre
     public function setGenre ($genre) {
-        if (is_string($genre) && strlen($genre) > 3) {
+        if (is_array($genre)) {
             $this->genre = $genre;
         }
         else {
             echo 'Error';
         }
     }
-    public function getGenre () {
+    public function getGenre (): array {
        return $this->genre;
     }
 
@@ -96,14 +96,16 @@ $pulpFiction = new Movie ('Pulp Fiction', ['drama', 'pulp', 'romantic'], 'Quenti
 
 
 <!-- Stampo in pagina 2 oggetti -->
-<!-- <?php 
+<?php 
 echo '<h2>Movie 1:</h2>';
+echo '<pre>';
 var_dump($rambo);
+echo '</pre>';
 
 echo '<h2>Movie 2:</h2>';
 var_dump($pulpFiction);
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
