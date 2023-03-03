@@ -96,7 +96,7 @@ $pulpFiction = new Movie ('Pulp Fiction', ['drama', 'pulp', 'romantic'], 'Quenti
 
 
 <!-- Stampo in pagina 2 oggetti -->
-<?php 
+<!-- <?php 
 echo '<h2>Movie 1:</h2>';
 echo '<pre>';
 var_dump($rambo);
@@ -105,7 +105,7 @@ echo '</pre>';
 echo '<h2>Movie 2:</h2>';
 var_dump($pulpFiction);
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
