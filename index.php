@@ -14,7 +14,7 @@ class Movie {
     public $vote;
 
     // Funzione speciale -> costruttore
-    function __construct($title, $genre, $director, $cast, $year, $duration, $vote, $description = 'None') {
+    function __construct(string $title, array $genre, string $director, string $cast, int $year, string $duration, int $vote, string $description = 'None') {
         // Non dovrebbe esserci $_title? Dà errore.
         $this->title = $title;
         $this->genre = $genre;
@@ -81,10 +81,10 @@ class Movie {
 }
 
 // Definisco oggetto 1
-$rambo = new Movie ('Rambo', 'Action', 'Ted Kotcheff', 'Sylvester Stallone, Richard Crenna', 1982, '196 minuti', 2);
+$rambo = new Movie ('Rambo',['action', 'crime', 'romantic'], 'Ted Kotcheff', 'Sylvester Stallone, Richard Crenna', 1982, '196 minuti', 2);
 
 // Definisco oggetto 2
-$pulpFiction = new Movie ('Pulp Fiction', 'Drama', 'Quentin Tarantino', 'Uma Thurman, John Travolta, Harvey Keitel', 1994, '199 minuti', 5, 'Si incrociano le strade di personaggi legati al crimine. Un pugile che mente a un capo banda, due sicari che discutono massaggi ai piedi e panini, una coppia che rapina una caffetteria e altri danno vita a un dramma criminale comico quanto brutale.');
+$pulpFiction = new Movie ('Pulp Fiction', ['drama', 'pulp', 'romantic'], 'Quentin Tarantino', 'Uma Thurman, John Travolta, Harvey Keitel', 1994, '199 minuti', 5, 'Si incrociano le strade di personaggi legati al crimine. Un pugile che mente a un capo banda, due sicari che discutono massaggi ai piedi e panini, una coppia che rapina una caffetteria e altri danno vita a un dramma criminale comico quanto brutale.');
 
 ?>
 
